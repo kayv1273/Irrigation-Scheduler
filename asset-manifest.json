@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Irrigation-Scheduler/static/css/main.f855e6bc.css",
+    "main.js": "/Irrigation-Scheduler/static/js/main.3f69485a.js",
+    "static/js/453.3e6fc153.chunk.js": "/Irrigation-Scheduler/static/js/453.3e6fc153.chunk.js",
+    "index.html": "/Irrigation-Scheduler/index.html",
+    "main.f855e6bc.css.map": "/Irrigation-Scheduler/static/css/main.f855e6bc.css.map",
+    "main.3f69485a.js.map": "/Irrigation-Scheduler/static/js/main.3f69485a.js.map",
+    "453.3e6fc153.chunk.js.map": "/Irrigation-Scheduler/static/js/453.3e6fc153.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.3f69485a.js"
+  ]
+}
