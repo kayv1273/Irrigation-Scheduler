@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Irrigation-Scheduler/static/css/main.7e0720a5.css",
-    "main.js": "/Irrigation-Scheduler/static/js/main.ed5513b2.js",
+    "main.css": "/Irrigation-Scheduler/static/css/main.ee2560fc.css",
+    "main.js": "/Irrigation-Scheduler/static/js/main.ac9b67c4.js",
     "static/js/453.3e6fc153.chunk.js": "/Irrigation-Scheduler/static/js/453.3e6fc153.chunk.js",
     "index.html": "/Irrigation-Scheduler/index.html",
-    "main.7e0720a5.css.map": "/Irrigation-Scheduler/static/css/main.7e0720a5.css.map",
-    "main.ed5513b2.js.map": "/Irrigation-Scheduler/static/js/main.ed5513b2.js.map",
+    "main.ee2560fc.css.map": "/Irrigation-Scheduler/static/css/main.ee2560fc.css.map",
+    "main.ac9b67c4.js.map": "/Irrigation-Scheduler/static/js/main.ac9b67c4.js.map",
     "453.3e6fc153.chunk.js.map": "/Irrigation-Scheduler/static/js/453.3e6fc153.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e0720a5.css",
-    "static/js/main.ed5513b2.js"
+    "static/css/main.ee2560fc.css",
+    "static/js/main.ac9b67c4.js"
   ]
 }
