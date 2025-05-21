@@ -17,6 +17,8 @@ var sunset
 
 var numberOfIntervals = 23;
 
+const BUFFER = 5; // buffer between zones
+
 class IrrigationValues {
     constructor(zoneID, numberOfRows, lengthOfDripLine, emittersStandard, waterVolume, distanceBetweenDripRows, applicationRatePerHour) {
         this.zoneID = zoneID
@@ -208,13 +210,16 @@ function scheduleIrrigation(volumes, usedIntervals, desiredRates) {
                     continue; // keep checking if the time doesn't fit in the used times
                 }
 
-                if (!isFlowSufficient(desiredRateForZone, startTime, endTime)) {
+                if (!isFlowSufficient(desiredRateForZone.waterRate, startTime, endTime)) {
                     continue; // keep checking since the flow is not sufficient throughout the entire time
                 }
 
                 const startTimeInHours = timeStringToHoursMinutes(startTime);
                 const endTimeInHours = timeStringToHoursMinutes(endTime);
-                usedIntervals.push({ start: startTime, end: endTime });
+
+                const adjustedEndTime = endTime + BUFFER;
+
+                usedIntervals.push({ start: startTime, end: adjustedEndTime });
 
                 // Add to the schedule
                 schedule.push({
