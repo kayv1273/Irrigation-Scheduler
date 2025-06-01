@@ -17,7 +17,7 @@ var sunset
 
 var numberOfIntervals = 23;
 
-const BUFFER = 5; // buffer between zones
+const BUFFER = 10; // buffer between zones
 
 class IrrigationValues {
     constructor(zoneID, numberOfRows, lengthOfDripLine, emittersStandard, waterVolume, distanceBetweenDripRows, applicationRatePerHour) {
@@ -262,11 +262,15 @@ function timeStringToHours(stringTimes) {
 
 function isTimeInUsedIntervals(startTime, endTime, usedIntervals) {
     for (const interval of usedIntervals) {
-        if (startTime <= interval.end && endTime >= interval.start) { // overlaps if startTime is before interval end and endTime is after interval start
-            return true; // There is a conflict
+        // Account for BUFFER both before and after an interval
+        const bufferedStart = interval.start - BUFFER;
+        const bufferedEnd = interval.end + BUFFER;
+
+        if (startTime < bufferedEnd && endTime > bufferedStart) {
+            return true; // Overlaps or within BUFFER range
         }
     }
-    return false; // No conflict found
+    return false;
 }
 
 function generateIrrigationSchedule(sections, desiredRates) {
