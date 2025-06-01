@@ -72,7 +72,7 @@ function Home() {
                     <div className="card-body" style={{ paddingLeft: "40px", paddingTop: "20px", paddingRight: "20px", paddingBottom: "20px" }}>
                         <h3 className="card-title" style={{ fontSize: "26px" }}>Water Rate Value Inputs</h3>
                             <p style={{ color: "gray", fontSize: "16px" }} className="card-description" >
-                                Input water application rate values in centimeters.
+                                Input water application rate values in centimeters. THANKS
                             </p>
                             <br />
                             <form>
